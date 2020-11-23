@@ -1,0 +1,18 @@
+{
+  "name": "qrcodejs",
+  "version": "1.0.0",
+  "description": "QRCode.js is javascript library for making QRCode. QRCode.js supports Cross-browser with HTML5 Canvas and table tag in DOM. QRCode.js has no dependencies.",
+  "main": "jquery.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "uglifyjs": "uglifyjs qrcode.js -o qrcode.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pifeifei/qrcodejs.git"
+  },
+  "keywords": [
+    "qrcode"
+  ],
+  "license": "MIT"
+}

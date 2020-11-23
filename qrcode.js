@@ -354,14 +354,14 @@ var QRCode;
     		this._android = _getAndroid();
 		
 			this._htOption = htOption;
-			this._elCanvas = document.createElement("canvas");
+			this._elCanvas = document.getElementsByTagName("canvas").length ? document.getElementsByTagName("canvas")[0] : document.createElement("canvas");
 			this._elCanvas.width = htOption.width;
 			this._elCanvas.height = htOption.height;
 			el.appendChild(this._elCanvas);
 			this._el = el;
 			this._oContext = this._elCanvas.getContext("2d");
 			this._bIsPainted = false;
-			this._elImage = document.createElement("img");
+			this._elImage = document.getElementsByTagName("img").length ? document.getElementsByTagName("img")[0] : document.createElement("img");
 			this._elImage.alt = "Scan me!";
 			this._elImage.style.display = "none";
 			this._el.appendChild(this._elImage);
